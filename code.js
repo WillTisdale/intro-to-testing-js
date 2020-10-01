@@ -32,3 +32,19 @@ function isEven(input) {
         return false;
     }
 }
+
+function isVowel(input){
+    switch(input){
+        case "a": case "A": case "e": case "E": case "i": case "I": case "o": case "O": case "u": case "U":
+            return true;
+    }
+    return false;
+}
+
+function add(x,y){
+    if(isNaN(x) || isNaN(y)){
+        return "NaN";
+    }else {
+        return Number(x) + Number(y);
+    }
+}
