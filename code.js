@@ -8,5 +8,9 @@ const helloWorld = function(){
 }
 
 function sayHello(input) {
-    return "Hello, " + input + "!";
+    if (typeof input === "string" && input.length > 0 && isNaN(Number(input))) {
+        return "Hello, " + input + "!";
+    } else {
+        return  "Hello, World!";
+    }
 }
